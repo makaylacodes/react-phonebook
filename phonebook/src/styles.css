@@ -1,0 +1,16 @@
+.link {
+    color:#fff
+  }
+  #footer{
+    text-align: center;
+    font-size: 105%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(178, 154, 154);
+    height: 8%;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    color:#fff;
+  }
