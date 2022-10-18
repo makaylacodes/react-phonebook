@@ -42,7 +42,7 @@ const Footer = () => {
   return (
     <footer id="footer">
         <p >&copy; Copyright 2022 <br />
-        Built with &#x2661; by <a className="link" href="https://github.com/makaylacodes/react-country-facts" target="_blank">
+        Built with &#x2661; by <a className="link" href="https://github.com/makaylacodes/react-phonebook" target="_blank">
         Makayla Anderson-Tucker
         </a>
         </p>
