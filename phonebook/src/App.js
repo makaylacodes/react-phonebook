@@ -38,6 +38,19 @@ const Filter = ({ array, query, delete1 }) => {
   )
 };
 
+const Notice = () => {
+  return (
+    <div className='notice'>
+      <p>To use this app, please click <a href="https://github.com/makaylacodes/react-phonebook" target="_blank" >here</a> to access the github repo.</p>
+      <p>Step 1: Pull repo onto your machine.</p>
+      <p>Step 2: Open a terminal and use command <strong>cd phonebook</strong>.</p>  
+      <p>Step 3: Run command <strong>npm run start</strong>.</p>
+      <p>Step 4: Open a new terminal and run command <strong>npm run server</strong>.</p>
+      <p>The app should be working now! </p>
+    </div>
+  )
+}
+
 const Footer = () => {
   return (
     <footer id="footer">
@@ -160,6 +173,8 @@ const App = () => {
         <Filter array={persons} query={searchs} delete1={delete1} />
         
       </ol>
+      <Notice />
+      <br />
       <Footer />
       
     </div>
