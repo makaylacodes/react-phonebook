@@ -7,8 +7,6 @@ app.use(express.json());
 
 const cors = require("cors");
 app.use(cors());
-const dotenv = require('dotenv').config();
-app.use(dotenv());
 let persons = [
     {
       "name": "Arto Hellas",
