@@ -1,18 +1,22 @@
+.app{
+  position: relative;
+  min-height: 100vh;
+}
+.content{
+  padding-bottom: 2.5rem;    /* Footer height */
+}
 .link {
     color:#fff
   }
-  #footer{
-    text-align: center;
-    font-size: 105%;
+  #footer {
     position: absolute;
-    width:99%;
-    background: rgb(178, 154, 154);
-    height: 8%;
-    padding-top: 5px;
-    padding-bottom: 25px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: rgb(178, 154, 154);           /* Footer height */
     color:#fff;
-    margin: 0 0 0 0;
-  }
+    text-align: center;
+}
   .notice{
     border-style: solid;
     width: 25%;
