@@ -49,6 +49,10 @@ let persons = [
       "id": 10
     }
   ];
+//health check
+app.get('/', (request, response) => {
+    response.sendStatus(200)
+  })
 
 app.get("/api/persons", (request, response) => {
     response.json(persons);
@@ -70,7 +74,7 @@ app.delete("/api/persons/:id", (request, response) => {
     persons = persons.filter(person => person.id !== id);
     response.status(204).end();
 });
-app.use(express.json());
+
 const generateId = () => {
     const maxId = persons.length > 0
     ? Math.max(...persons.map(p => p.id ))
