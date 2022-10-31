@@ -61,13 +61,7 @@ $ npm run dev
 ## Project Status
 Project is: _in progress_ 
 
-## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
-Room for improvement:
-- Updating a contact's phone number requires re-entering the contact's name along with a new phone number.
-
-To do:
+## To Do
 - An edit button that allows users to update a contact's name or number.
 
 ## Acknowledgements
