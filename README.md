@@ -1,6 +1,7 @@
 # Phonebook
-> A fullstack web app that allows users to add contacts to their online phonebook.
-> Live demo [_here_](https://json-phone-book.netlify.app/). <!-- If you have the project hosted somewhere, include the link here. -->
+A fullstack web app that allows users to add contacts to their online phonebook.
+
+Live demo [_here_](https://json-phone-book.netlify.app/)
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -20,9 +21,12 @@
 
 
 ## General Information
-- This project was a part of my Fullstack Open coursework. The objectives were: 
-  -  coming soon
--  Coming soon
+This project was a part of my Fullstack Open coursework. The objectives were to learn how to:
+  - render collections
+  - handle forms in React
+  - use Node and Express to develop a server
+  - retrieve/alter data in the server
+  - save data to MongoDB.
 
 
 ## Technologies Used
