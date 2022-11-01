@@ -1,7 +1,7 @@
 # Phonebook
-A fullstack web app that allows users to add contacts to their online phonebook.
+A fullstack web app that allows users to add contacts to their online phonebook. Live demo [_here_](https://json-phone-book.netlify.app/)
 
-Live demo [_here_](https://json-phone-book.netlify.app/)
+NOTE: Server may take up to 90 seconds to load. If no data has been loaded in 90 seconds, please refresh the webpage.
 
 ## Table of Contents
 * [General Info](#general-information)
