@@ -14,16 +14,18 @@ code {
 .link {
   color:#fff
 }
+
+/* This code works for phones and desktops. Howeveer, need to add a media thingy
+    so that on ipad/tablet screens it sticks to the bottom because right now it 
+      comes up. But this is pretty much everything I wanted*/
 footer{
+  padding: .5rem;
   text-align: center;
-  font-size: 105%;
-  position: absolute;
+  font-weight: 700;
+  margin: 2rem 0 0;
+  background:  rgb(178, 154, 154);
+  color:#fff;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: .5rem;
-  text-align: center;
-  margin: 2rem 0 0;
-  background: rgb(178, 154, 154);
-  color:#fff;
 }
