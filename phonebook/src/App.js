@@ -55,12 +55,14 @@ const App = () => {
   const [newName, setNewName] = useState('');
   const [numbers, setNumbers] = useState('');
   const [searchs, setSearchs] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   
   const hook = () => {
     personService
     .getAll()
     .then(initialPersons => {
-      setPersons(initialPersons)
+      setPersons(initialPersons);
+      setIsLoading(false);
     });
   };
 
@@ -156,10 +158,14 @@ const App = () => {
   return (
     <div className='app'>
       <div className='content'>
-        <ol>
-          <Form addPerson={addPerson} newName={newName} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange} handleSearchChange={handleSearchChange} searchs={searchs} numbers={numbers}/>
-          <Filter array={persons} query={searchs} delete1={delete1} />
-        </ol>
+        
+          {isLoading ? 
+          <p>Loading. . .</p> :
+          <ol>
+           <Form addPerson={addPerson} newName={newName} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange} handleSearchChange={handleSearchChange} searchs={searchs} numbers={numbers}/>
+            <Filter array={persons} query={searchs} delete1={delete1} />
+        </ol>}
+
       </div>
       <Footer />
       
