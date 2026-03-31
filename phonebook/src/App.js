@@ -15,7 +15,7 @@ const Person = ({ person, deletePerson }) => {
   );
 };
 
-const Filter = ({ array, query, delete1 }) => {
+const Card = ({ array, query, delete1 }) => {
   const save = array.map(element => {
     return ({
         ...element,
@@ -31,7 +31,7 @@ const Filter = ({ array, query, delete1 }) => {
   const display = result.map( element => <Person key={element.id} person={element} deletePerson={() => delete1(element.id)} /> );
   console.log("This is the display variable", display)
   return (
-    <div>
+    <div className='card'>
       <h2>Filtered Results</h2>
       {display}
     </div>
@@ -163,7 +163,7 @@ const App = () => {
           <p>Loading. . .</p> :
           <ol>
            <Form addPerson={addPerson} newName={newName} handleNameChange={handleNameChange} handleNumberChange={handleNumberChange} handleSearchChange={handleSearchChange} searchs={searchs} numbers={numbers}/>
-            <Filter array={persons} query={searchs} delete1={delete1} />
+            <Card array={persons} query={searchs} delete1={delete1} />
         </ol>}
 
       </div>
